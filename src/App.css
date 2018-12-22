@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #a2e3c1;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px #a2e3c1;
 }
 
 .App-logo {
@@ -9,13 +15,85 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.current {
+  width: 95%;
+  height: 8%;
+  text-align: right;
+  font-size: 14px;
+  margin-top: 3%;
+  color: #8c8c8c;
+}
+.field {
+  width: 90%;
+  height: 15%;
+  text-align: right;
+  font-size: 24px;
+  background: #a2e3c1;
+  /* background-color: red; */
+  color: white;
+  border-radius: 2px;
+}
+
+.field:focus{
+  outline: none;
+}
+
+.square {
+  /* background: #fff; */
+  border: 1px solid #999;
+  border-radius: 3px;
+  /* float: left; */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  height: 100%;
+  margin-right: 2%;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 20%;
+  color: white;
+}
+
+.number {
+  background: linear-gradient(#cccccc, #b2b2b2);
+  background-color: #bfbfbf;
+  box-shadow: inset 0 1px 1px #e5e5e5;
+  border-color: #a6a6a6 #999999 #8c8c8c;
+}
+
+.operator {
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+.number:hover{
+  /* color: white; */
+  opacity: 0.8;
+}
+
+.operator:hover{
+  opacity: 0.95;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.board-row{
+  /* border: 1px solid black; */
+  margin: 1.5%;
 }
 
 .App-link {
